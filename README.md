@@ -1,4 +1,13 @@
-# BasicGLFWImgui
+# Fork of BasicGLFWImgui
+
+This project is from:
+
+   https://github.com/gwerners/BasicGLFWImgui
+
+I have added an eclipse makefile project and turned on debug.
+
+
+## BasicGLFWImgui
 Basic example of using GLFW + Imgui
 
 I did the same code as the example inside this wonderfull tutorial:

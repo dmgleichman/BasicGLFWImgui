@@ -177,6 +177,7 @@ class Shader{
       return shaderStream.str();
     }catch (std::ifstream::failure e){
       std::cout << "ERROR::SHADER::FILE_NOT_SUCCESFULLY_READ" << std::endl;
+      return 0;
     }
   }
 public:
@@ -286,7 +287,7 @@ int main(int, char**)
 #if __APPLE__
     glfwWindowHint(GLFW_OPENGL_FORWARD_COMPAT, GL_TRUE);
 #endif
-    GLFWwindow* window = glfwCreateWindow(SCR_WIDTH, SCR_HEIGHT, "ImGui GLFW example 09", NULL, NULL);
+    GLFWwindow* window = glfwCreateWindow(SCR_WIDTH, SCR_HEIGHT, "Basic GLFW Imgui Example", NULL, NULL);
     glfwMakeContextCurrent(window);
     glfwSetFramebufferSizeCallback(window, framebuffer_size_callback);
     glfwSetCursorPosCallback(window, mouse_callback);
@@ -460,7 +461,7 @@ int main(int, char**)
         // 1. Show a simple window
         if (show_another_window){
             ImGui::SetNextWindowSize(ImVec2(200,100), ImGuiSetCond_FirstUseEver);
-            ImGui::Begin("Another Window", &show_another_window);
+            ImGui::Begin("Select Box to Spin", &show_another_window);
             ShowAnotherWindow();
             ImGui::End();
         }
