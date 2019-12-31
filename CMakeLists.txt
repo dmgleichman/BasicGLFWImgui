@@ -30,6 +30,7 @@ if (APPLE)
     imgui_impl_glfw_gl3.cpp
     imgui.cpp
     imgui_draw.cpp
+    spacelayout.cpp
     ${RESOURCE_FILES} ${GLAD})
 
   target_link_libraries(${PROJECT_NAME}
@@ -56,6 +57,7 @@ elseif (UNIX AND NOT APPLE)
     imgui_impl_glfw_gl3.cpp
     imgui.cpp
     imgui_draw.cpp
+    spacelayout.cpp
     ${RESOURCE_FILES} ${GLAD})
 
   target_link_libraries(${PROJECT_NAME}
