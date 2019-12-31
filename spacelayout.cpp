@@ -57,6 +57,12 @@ float vertices[NUMBER_VERTICES] = {
 };
 // world space positions of our cubes
 glm::vec3 cubePositions[NUMBER_CUBES] = {
+#if NUMBER_CUBES==4
+	glm::vec3( 0.0f,  0.0f,  0.0f),
+	glm::vec3( 2.0f,  0.0f,  0.0f),
+	glm::vec3( 0.0f,  2.0f,  0.0f),
+	glm::vec3( -1.0f,  0.0f,  0.0f),
+#else
 	glm::vec3( 0.0f,  0.0f,  0.0f),
 	glm::vec3( 2.0f,  5.0f, -15.0f),
 	glm::vec3(-1.5f, -2.2f, -2.5f),
@@ -67,6 +73,7 @@ glm::vec3 cubePositions[NUMBER_CUBES] = {
 	glm::vec3( 1.5f,  2.0f, -2.5f),
 	glm::vec3( 1.5f,  0.2f, -1.5f),
 	glm::vec3(-1.3f,  1.0f, -1.5f)
+#endif
 };
 
 

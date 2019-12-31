@@ -31,6 +31,7 @@ if (APPLE)
     imgui.cpp
     imgui_draw.cpp
     spacelayout.cpp
+    shader.cpp
     ${RESOURCE_FILES} ${GLAD})
 
   target_link_libraries(${PROJECT_NAME}
@@ -58,6 +59,7 @@ elseif (UNIX AND NOT APPLE)
     imgui.cpp
     imgui_draw.cpp
     spacelayout.cpp
+    shader.cpp
     ${RESOURCE_FILES} ${GLAD})
 
   target_link_libraries(${PROJECT_NAME}
